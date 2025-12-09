@@ -1,4 +1,4 @@
-# REPLACEME
+# Ghostpost
 
 ## Building and running locally
 

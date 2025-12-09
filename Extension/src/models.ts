@@ -1,4 +1,4 @@
-export type BrowserMessageType = 'getColorScheme' | 'gotColorScheme';
+export type BrowserMessageType = 'getColorScheme' | 'gotColorScheme' | 'toggleSidebar';
 
 export type BrowserMessage = {
   type: BrowserMessageType;
@@ -7,10 +7,12 @@ export type BrowserMessage = {
 
 export type AppSettings = {
   displayHelpMessage: boolean;
+  openaiApiKey: string;
 };
 
 export const DEFAULT_SETTINGS: AppSettings = {
-  displayHelpMessage: true
+  displayHelpMessage: true,
+  openaiApiKey: ''
 };
 
 export type ColorScheme = 'light' | 'dark';

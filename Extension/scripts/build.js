@@ -20,7 +20,13 @@ async function main() {
   const contentJob = build({
     ...commonConfig,
     entryPoints: ['./src/content.ts'],
-    outfile: './dist/content.js'
+    outfile: './dist/content.js',
+    mainFields: ['svelte', 'module', 'main', 'browser'],
+    plugins: [
+      sveltePlugin({
+        preprocess: sveltePreprocess()
+      })
+    ]
   });
 
   const backgroundJob = build({

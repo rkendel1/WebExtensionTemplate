@@ -1,10 +1,10 @@
 {
   "extension_name": {
-    "message": "REPLACEME",
+    "message": "Ghostpost",
     "description": "The display name for the extension."
   },
   "extension_description": {
-    "message": "REPLACEME",
+    "message": "Hide your secrets within your messages using invisible Unicode characters. Now with AI-powered content generation for social media!",
     "description": "Description of what the extension does."
   }
 }

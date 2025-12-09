@@ -48,7 +48,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     @objc
     private func openHelpPage() {
-        let helpLink = URL(string: "REPLACEME")!
+        let helpLink = URL(string: "https://github.com/REPLACEME/Ghostpost")! // Using a placeholder link
         NSWorkspace.shared.open(helpLink)
     }
 

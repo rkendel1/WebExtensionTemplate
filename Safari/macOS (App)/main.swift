@@ -1,6 +1,6 @@
 //
 //  main.swift
-//  REPLACEME (macOS)
+//  Ghostpost (macOS)
 //
 //  Created by Kyle Nazario on 6/28/23.
 //

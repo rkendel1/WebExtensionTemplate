@@ -17,14 +17,21 @@
     settingsConnector.updateSettings({ displayHelpMessage });
   };
 
+  const updateOpenaiApiKey = (e: InputChangeEvent) => {
+    const target = e.target as HTMLInputElement;
+    const openaiApiKey = target.value;
+    settingsConnector.updateSettings({ openaiApiKey });
+  };
+
   $: {
     if (appSettings?.displayHelpMessage) console.log('Get help on GitHub!');
   }
 </script>
 
 {#if appSettings}
-  <h1>Settings</h1>
+  <h1>Ghostpost Settings</h1>
   <section>
+    <h2>General</h2>
     <form>
       <div class="form-group">
         <input
@@ -38,10 +45,34 @@
       </div>
     </form>
   </section>
+
+  <section>
+    <h2>AI Configuration</h2>
+    <form>
+      <div class="form-group">
+        <label for="openai-api-key">OpenAI API Key</label>
+        <input
+          type="password"
+          id="openai-api-key"
+          name="openai-api-key"
+          placeholder="sk-..."
+          value={appSettings.openaiApiKey}
+          on:input={updateOpenaiApiKey}
+        />
+        <p class="note">
+          Warning: Storing API keys in browser storage is not fully secure. Use with caution.
+        </p>
+      </div>
+    </form>
+  </section>
 {/if}
 
 <style>
   h1 {
     padding: 1em 0;
+  }
+  .note {
+    font-size: 0.8em;
+    color: #888;
   }
 </style>

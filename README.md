@@ -1,8 +1,8 @@
-# WebExtensionTemplate
+# Ghostpost
 
 Create a browser extension for Chrome, Firefox and Safari in no time.
 
-WebExtensionTemplate lets you skip the boilerplate and write a [Web Extension](https://developer.mozilla.org/en-US/docs/Glossary/WebExtensions) with [TypeScript](https://www.typescriptlang.org) and [Svelte](https://www.typescriptlang.org) or [React](https://react.dev).
+Ghostpost lets you skip the boilerplate and write a [Web Extension](https://developer.mozilla.org/en-US/docs/Glossary/WebExtensions) with [TypeScript](https://www.typescriptlang.org) and [Svelte](https://www.typescriptlang.org) or [React](https://react.dev).
 
 ## Features
 
