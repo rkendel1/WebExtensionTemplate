@@ -138,6 +138,12 @@
     margin-bottom: 1em;
   }
 
+  .detector-button.active {
+    background-color: #007bff; /* Primary color from water.css */
+    color: white;
+    border-color: #007bff;
+  }
+
   .content-area {
     padding: 0 1em 1em 1em;
   }
