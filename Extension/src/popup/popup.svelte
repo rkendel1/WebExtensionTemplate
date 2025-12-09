@@ -128,6 +128,13 @@
 </div>
 
 <style>
+  /* Add minimum dimensions to the root element to ensure the popup is visible */
+  :global(main#root) {
+    min-width: 350px;
+    min-height: 400px;
+    display: block; /* Ensure it respects dimensions */
+  }
+
   .header-bar {
     display: flex;
     flex-direction: column;
