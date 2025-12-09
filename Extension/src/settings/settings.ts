@@ -1,2 +1,5 @@
 import App from './settings.svelte';
-new App({ target: document.getElementById('root') as HTMLDivElement });
+
+document.addEventListener('DOMContentLoaded', () => {
+  new App({ target: document.getElementById('root') as HTMLDivElement });
+});
